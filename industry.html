@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advertising &amp; Digital Media Industry</title>
+  <style>
+/* Base styles — kept consistent with index.html */
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #000000;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(135deg, #4a90e2, #6a11cb);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  /* Embedded style change #1: larger, more distinctive H1 */
+  font-size: 2.25rem;
+  letter-spacing: 0.6px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 0.25rem;
+}
+
+nav a:hover,
+nav a.active {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+/* Main layout */
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem 3rem;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+}
+
+/* Card container to match visuals */
+.card {
+  background: white;
+  padding: 1.75rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Embedded style change #2: H2 color and weight */
+h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #2e4057;
+  font-weight: 700;
+}
+
+/* Embedded style change #3: Paragraph typography */
+p {
+  margin: 0.6rem 0 0;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+/* Image styling changed as well */
+.industry-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 760px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #4a90e2, #6a11cb);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* Small responsive tweak */
+@media (max-width: 480px) {
+  header h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.15rem; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Advertising &amp; Digital Media Industry</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="industry.html" class="active">Industry</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Industry image -->
+    <img class="industry-image" src="https://images.unsplash.com/photo-1508385082359-f35a4b5d2b5c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c7b4a2e07f2f0c1b0d6f6f8a2e5b7e6" alt="Digital marketing team collaborating on a campaign">
+
+    <!-- Describe the industry -->
+    <section class="card">
+      <h2>About the Industry</h2>
+      <p>The advertising and digital media industry centers on creating, distributing, and optimizing messages that connect brands with audiences. It blends creativity, analytics, and technology to produce campaigns across channels — including social media, display ads, video, search, podcasts, and experiential installations. Agencies in this industry provide strategy, creative direction, production, media buying, and measurement services to help clients build awareness, drive engagement, and achieve business goals.</p>
+    </section>
+
+    <!-- Describe the career/role -->
+    <section class="card">
+      <h2>My Role: Creative / Digital Technologist</h2>
+      <p>As a Creative / Digital Technologist, I act as the technical partner to creative teams: I prototype interactive concepts, build web and app experiences, integrate emerging tech (AR/VR, AI-based personalization), and ensure campaigns are technically feasible and performant. I translate artistic vision into functioning digital products, optimize user experiences, and collaborate across design, engineering, and strategy to deliver measurable campaign outcomes.</p>
+    </section>
+
+    <!-- Ethical issue in the position -->
+    <section class="card">
+      <h2>Potential Ethical Issue</h2>
+      <p>An ethical concern that can arise in this role is the misuse of persuasive technology. For example, designing hyper-targeted creative that exploits vulnerable audiences or manipulates emotions in ways that undermine informed consent raises moral questions. As a technologist, it’s important to balance persuasive effectiveness with respect for user autonomy, transparent data use, and client responsibility.</p>
+    </section>
+
+    <!-- Two cybersecurity issues -->
+    <section class="card">
+      <h2>Cybersecurity Issues that Could Arise</h2>
+      <p><strong>1. Data Breaches and Client Data Exposure:</strong> Advertising campaigns often rely on sensitive customer data (CRM records, user identifiers, audience segments). A breach or improper third-party integration could leak PII or targeting data, harming customers and damaging client trust.</p>
+      <p><strong>2. Supply-Chain & Ad Tech Vulnerabilities:</strong> Modern ad stacks use many third-party tags, SDKs, and programmatic partners. Malicious or compromised ad-tech vendors can inject malware (malvertising), redirect traffic, or manipulate creative, causing brand safety incidents and security risks for end-users.</p>
+    </section>
+
+    <!-- Cybersecurity best practices -->
+    <section class="card">
+      <h2>Cybersecurity Best Practices for the Industry</h2>
+      <p><strong>Vendor vetting & supply-chain controls:</strong> Conduct security assessments of ad-tech vendors and limit third-party tags. Use tag management to control and monitor scripts that run on campaign properties.</p>
+      <p><strong>Data governance & minimization:</strong> Collect only what you need, encrypt sensitive data at rest and in transit, and enforce least-privilege access for campaign teams.</p>
+      <p><strong>Secure development & testing:</strong> Follow secure coding practices, perform vulnerability scanning and penetration testing on campaign sites/apps, and validate media creatives for malicious content before launch.</p>
+      <p><strong>Incident response & monitoring:</strong> Maintain logging, set up alerting for unusual activity, and have a clear breach response plan that includes client notification and remediation steps.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Advertising &amp; Digital Media</p>
+  </footer>
+</body>
+</html>
