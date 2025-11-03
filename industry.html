@@ -5,28 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Advertising &amp; Digital Media Industry</title>
   <style>
-    
-    main {
-  align-self: center;
-  width: 100%;
-  max-width: 1000px;
-}
-
     body {
-  margin: 0;
-  font-family: Verdana, sans-serif;
-  background: #f5f7fa;
-  color: #000000;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #000;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
     header {
-      width: 100%;
-      background: var(--gradient);
+      background: linear-gradient(135deg, #4a90e2, #6a11cb);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
@@ -36,7 +27,6 @@
     header h1 {
       margin: 0 0 0.5rem;
       font-size: 2.25rem;
-      letter-spacing: 0.6px;
     }
 
     nav {
@@ -51,14 +41,23 @@
       text-decoration: none;
       margin: 0 0.5rem;
       font-weight: bold;
-      transition: color 0.3s ease, border-bottom 0.3s ease;
       padding-bottom: 0.25rem;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
     }
 
     nav a:hover,
     nav a.active {
-      color: #000000;
-      border-bottom: 2px solid #000000;
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+      flex: 1 0 auto;
+      box-sizing: border-box;
     }
 
     .industry-image {
@@ -73,19 +72,15 @@
     }
 
     .cards {
-      max-width: 1000px;
       margin: 2.5rem auto;
-      padding: 0 1.5rem 3rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.75rem;
-      box-sizing: border-box;
       width: 100%;
-      flex: 1 0 auto;
     }
 
     .card {
-      background: var(--card-bg);
+      background: #fff;
       padding: 1.75rem;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -100,14 +95,14 @@
     .card h2 {
       margin-top: 0;
       font-size: 1.25rem;
-      color: var(--muted);
+      color: #0f1724;
       font-weight: 700;
     }
 
     .card p {
       margin: 0.6rem 0 0;
       font-size: 1rem;
-      color: var(--text-main);
+      color: #27313a;
     }
 
     .accent-1 { border-top: 6px solid #00796b; }
@@ -117,10 +112,9 @@
     .accent-5 { border-top: 6px solid #ff8f00; }
 
     footer {
-      width: 100%;
       text-align: center;
       padding: 1rem;
-      background: var(--gradient);
+      background: linear-gradient(135deg, #4a90e2, #6a11cb);
       margin-top: 2rem;
       font-size: 0.9rem;
       color: white;
@@ -128,7 +122,7 @@
 
     @media (max-width: 640px) {
       header h1 { font-size: 1.5rem; }
-      .cards { padding: 0 1rem 2rem; gap: 1rem; }
+      .cards { gap: 1rem; }
       .card { padding: 1rem; }
     }
   </style>
@@ -164,15 +158,15 @@
       <article class="card accent-4" id="cyber-issues">
         <h2>Cybersecurity Issues that Could Arise</h2>
         <p><strong>1. Data Breaches and Client Data Exposure:</strong> Advertising campaigns often rely on sensitive customer data (CRM records, user identifiers, audience segments). A breach or improper third-party integration could leak this information or targeting data, harming customers and damaging client trust.</p>
-        <p><strong>2. Supply-Chain & Ad Tech Vulnerabilities:</strong> Modern ad stacks use many third-party tags, SDKs, and programmatic partners. Malicious or compromised ad-tech vendors can inject malware (malvertising), redirect traffic, or manipulate creative, causing brand safety incidents and security risks for end-users.</p>
+        <p><strong>2. Supply-Chain &amp; Ad Tech Vulnerabilities:</strong> Modern ad stacks use many third-party tags, SDKs, and programmatic partners. Malicious or compromised ad-tech vendors can inject malware (malvertising), redirect traffic, or manipulate creative, causing brand safety incidents and security risks for end-users.</p>
       </article>
 
       <article class="card accent-5" id="best-practices">
         <h2>Cybersecurity Best Practices for the Industry</h2>
-        <p><strong>Vendor vetting & supply-chain controls:</strong> Conduct security assessments of ad-tech vendors and limit third-party tags. Use tag management to control and monitor scripts that run on campaign properties.</p>
-        <p><strong>Data governance & minimization:</strong> Collect only what you need, encrypt sensitive data at rest and in transit, and enforce least-privilege access for campaign teams.</p>
-        <p><strong>Secure development & testing:</strong> Follow secure coding practices, perform vulnerability scanning and penetration testing on campaign sites/apps, and validate media creatives for malicious content before launch.</p>
-        <p><strong>Incident response & monitoring:</strong> Maintain logging, set up alerting for unusual activity, and have a clear breach response plan that includes client notification and remediation steps.</p>
+        <p><strong>Vendor vetting &amp; supply-chain controls:</strong> Conduct security assessments of ad-tech vendors and limit third-party tags. Use tag management to control and monitor scripts that run on campaign properties.</p>
+        <p><strong>Data governance &amp; minimization:</strong> Collect only what you need, encrypt sensitive data at rest and in transit, and enforce least-privilege access for campaign teams.</p>
+        <p><strong>Secure development &amp; testing:</strong> Follow secure coding practices, perform vulnerability scanning and penetration testing on campaign sites/apps, and validate media creatives for malicious content before launch.</p>
+        <p><strong>Incident response &amp; monitoring:</strong> Maintain logging, set up alerting for unusual activity, and have a clear breach response plan that includes client notification and remediation steps.</p>
       </article>
     </section>
   </main>
